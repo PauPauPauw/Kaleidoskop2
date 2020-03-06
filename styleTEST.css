@@ -1,0 +1,307 @@
+
+@font-face {
+    font-family: 'aclonicaregular';
+    src: url('fonts/aclonica/aclonica-webfont.woff2') format('woff2'),
+         url('fonts/aclonica/aclonica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#startBody {
+  background-color: black;
+}
+
+.filmNav {
+  border: 0.5px solid black;
+  height: 3.5em;
+  background-color: #232a2c;
+}
+
+.filmtext {
+  background-color: white;
+}
+
+.textAllg {
+  border: 0.5px solid #232a2c;
+  color: white;
+  padding: 0.5em;
+  background-color: hsla(193,20%,15%, 0.8);
+}
+
+#start {
+  color: white;
+  font-family: 'aclonicaregular', arial, sans-serif;
+  margin-left: 1.2em;
+  margin-right: auto;
+}
+
+@media (min-width: 500px) {
+  #start::before {
+    content: "Kaleidoskop Unikino Leipzig!";
+  }
+}
+
+@media (max-width: 500px) {
+  #start::before {
+    content: "Kaleidoskop Leipzig!";
+  }
+}
+
+
+/*NavBar*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  box-sizing: border-box;
+}
+
+#contactLinks {
+  text-align: center;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+html:before,
+body:before {
+  bottom: 0;
+  content: '';
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+}
+svg {
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+}
+svg path {
+  fill: #fff;
+}
+ol {
+  list-style-type: none;
+}
+a[href] {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+a[href]:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  height: 4px;
+  background: #fff;
+  left: 0;
+  right: 0;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+.menu {
+  position: relative;
+  width: 250px;
+}
+.menu__content {
+  color: #fff;
+  margin: 0;
+  padding: 0 0 25px 0;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 300px;
+  z-index: 2;
+}
+.menu__toggle-label {
+  height: 44px;
+  left: 0;
+  position: absolute;
+  width: 44px;
+}
+.menu__toggle-label svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
+  z-index: 2;
+}
+.menu__toggle-label svg:nth-of-type(2) {
+  left: 250px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.menu__toggle {
+  opacity: 0;
+  position: fixed;
+}
+.menu__toggle:checked ~ .menu__toggle-label {
+  background: rgba(0,0,0,0.65);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+  width: 100vw;
+}
+.menu__toggle:checked ~ .menu__toggle-label svg:nth-of-type(1) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.menu__toggle:checked ~ .menu__toggle-label svg:nth-of-type(2) {
+  left: 250px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
+  -webkit-transition-delay: 0.925s;
+          transition-delay: 0.925s;
+}
+.menu__toggle:checked ~ .menu__content {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+.menu__toggle:checked ~ .menu__content .menu-item {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: border-color 0.15s, -webkit-transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: border-color 0.15s, -webkit-transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.15s;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.15s, -webkit-transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu__content > .menu-item {
+  border-left: 8px solid transparent;
+}
+.menu__content > .menu-item > a {
+  line-height: 44px;
+  min-width: 60px;
+}
+.sub-menu {
+  padding: 0 0 0 44px;
+}
+.menu-item {
+  line-height: 44px;
+  min-height: 44px;
+  padding: 0 12px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.menu-item .menu-item {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+
+
+/* Footer */
+footer {
+  padding: 2em 0 1em 0;
+  border: 0.5px solid black;
+  background-color: #232a2c; }
+
+footer > .inner {
+  margin: 0 auto;
+  width: 80em; }
+
+footer .copyright {
+  color: white;
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+  padding: 0;
+  text-align: center; }
+
+footer .copyright .icons {
+  margin: 2em 0 0 0; }
+
+@media screen and (max-width: 1280px) {
+  footer > .inner {
+    width: 65em; } }
+@media screen and (max-width: 980px) {
+  footer > .inner {
+    width: 90%; } }
+@media screen and (max-width: 736px) {
+  footer {
+    padding: 3em 0 1em 0; } }
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0; }
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0; }
+
+ul.icons li:last-child {
+  padding-right: 0; }
+
+ul.icons li .icon:before {
+  font-size: 2em; }
+
+
+
+/*Position of the copyright links*/
+#urheber {
+  font-size: 10px;
+  position: relative;
+  bottom: 1px;
+  text-align: center;
+  background-color: #232a2c;
+  color: white;
+}
+
+
+#dates {
+  text-align: center;
+  padding: 8em;
+}
+
+#beschreibung {
+  clear: both;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.imdb {
+  align-items: flex-end;
+}
+
+.header h1 {
+  position: relative;
+  top: 1% auto;
+  left: 1% auto; }
+
+.name {
+  font-weight: bold; }
+
+
+#news {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 4%;
+}
+
+
+/* Anpassung an Handy-Displays*/

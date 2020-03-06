@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleidoskop</title>
+    <link rel="stylesheet" href="styleTEST.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+  </head>
+
+  <body class="container" style="background-image: url('img/hintergrund.jpg')">
+
+    <div class="backgroundC">
+
+      <nav class="menu navStyle">
+        <input id ="menu__toggle" type="checkbox" class='menu__toggle'/>
+        <label for="menu__toggle" class="menu__toggle-label">
+          <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+            <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+          </svg>
+          <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+          </svg>
+        </label>
+        <ol class='menu__content'>
+          <li class="menu-item"><a href="index.html">Start</a></li>
+          <li class="menu-item"><a href="about.html">Unikino</a></li>
+          <li class="menu-item"><a href="menu.html">Getränke</a></li>
+          <li class="menu-item"><a href="gallery.html">Gallerie</a></li>
+          <li class="menu-item"><a href="news.html" style="color:red;">News</a></li>
+          <li class="menu-item"><a href="contact.html">Kontakt</a></li>
+          <li class="menu-item">
+            <div class="panel-group">
+             <div class="panel panel-default">
+               <div class="panel-heading">
+                   <a data-toggle="collapse" href="#collapse1">Filme</a>
+
+               </div>
+               <div id="collapse1" class="panel-collapse collapse">
+                 <ul>
+                   <div class="panel-body"><a href="movies/nachtmahr.html">Der Nachtmahr</a></div>
+                   <div class="panel-body"><a href="movies/blinde.html">Die Stadt der Blinden</a></div>
+                   <div class="panel-body"><a href="movies/germania.html">Germania</a></div>
+                   <div class="panel-body"><a href="movies/wilderpeople.html">Hunt for the Wilderpeople</a></div>
+                   <div class="panel-body"><a href="movies/mind.html">Mind Game</a></div>
+                   <div class="panel-body"><a href="movies/montana.html">Montana Sacra</a></div>
+                   <div class="panel-body"><a href="movies/mustang.html">Mustang</a></div>
+                   <div class="panel-body"><a href="movies/samsara.html">Samsara</a></div>
+                   <div class="panel-body"><a href="movies/shoplifters.html">Shoplifters</a></div>
+                   <div class="panel-body"><a href="movies/fromearth.html">The Man From Earth</a></div>
+                   <div class="panel-body"><a href="movies/24wochen.html">24 Wochen</a></div>
+                </ul>
+               </div>
+             </div>
+            </div>
+
+        </ol>
+      </nav>
+
+      <a href="index.html" style="text-decoration: none;"><h1 id="start"></h1></a>
+
+      <div class="textAllg">
+        <br>
+        <p>
+          In der nächsten Zeit werdet ihr hier alle Neuigkeiten und Ankündigungen sehen!
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="img/nachrichten.png" alt="nachrichten.png" id="news">
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+    <footer >
+      <div class="copyright">
+          <a href="https://www.instagram.com/kaleidoskopkino_leipzig/">
+            <img src="img/instagram.png">
+          </a>
+          <a href="https://www.facebook.com/KaleidoskopKino">
+            <img src="img/facebook.png">
+          </a>
+
+        <p>
+          Kaleidoskop Unikino Leipzig  <br>
+          E-Mail: KaleidoskopKino@posteo.de
+          <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+        </p>
+        <p>
+
+        </p>
+
+      </div>
+    </footer>
+
+    <div id="urheber">
+      Urheber-Verweise:
+      <li>Icons erstellt von <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></li>
+      <li>Facebook-Icon erstellt von <a href="https://www.flaticon.com/de/autoren/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></li>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>

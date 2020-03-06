@@ -1,0 +1,174 @@
+body {
+  background-color: black; }
+
+tbody {
+  text-align: center;
+}
+
+thead {
+  text-align: center;
+}
+
+.backgroundC {
+  background-color: white;
+}
+
+#news {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 4%;
+}
+
+/* Footer */
+footer {
+  padding: 2em 0 1em 0;
+  border: 0.5px solid black;
+  background-color: #232a2c; }
+
+footer > .inner {
+  margin: 0 auto;
+  width: 80em; }
+
+footer .copyright {
+  color: white;
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+  padding: 0;
+  text-align: center; }
+
+footer .copyright .icons {
+  margin: 2em 0 0 0; }
+
+@media screen and (max-width: 1280px) {
+  footer > .inner {
+    width: 65em; } }
+@media screen and (max-width: 980px) {
+  footer > .inner {
+    width: 90%; } }
+@media screen and (max-width: 736px) {
+  footer {
+    padding: 3em 0 1em 0; } }
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0; }
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0; }
+
+ul.icons li:last-child {
+  padding-right: 0; }
+
+ul.icons li .icon:before {
+  font-size: 2em; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden; }
+
+#startBody {
+  background-color: black;
+}
+
+.filmtext {
+  background-color: white;
+}
+
+.header {
+  border: 1.5px solid black;
+  background-color: #197571;
+  border-radius: 0px 0px 15px 15px;
+  font-family: 'aclonicaregular', arial, sans-serif;
+}
+
+.mainpart {
+  border-radius: 15px 15px 0px 0px;
+}
+
+@font-face {
+    font-family: 'aclonicaregular';
+    src: url('fonts/aclonica/aclonica-webfont.woff2') format('woff2'),
+         url('fonts/aclonica/aclonica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.header img {
+  float: left;
+  width: 5%;
+  height: 5%;
+  background: #555;
+  border-radius: 0px 0px 0px 15px;
+  margin-right: 0.2em;
+ }
+
+@media (min-width: 500px) {
+  #start::before {
+    content: "Willkommen beim Kaleidoskop Unikino Leipzig!";
+  }
+}
+
+@media (max-width: 500px) {
+  #start::before {
+    content: "Willkommen beim Kaleidoskop Leipzig!"
+  }
+}
+
+
+
+/*Position of the copyright links*/
+#urheber {
+  font-size: 10px;
+  position: relative;
+  bottom: 1px;
+  text-align: center;
+  background-color: #232a2c;
+  color: white;
+}
+
+#dates {
+  text-align: center;
+  padding: 8em;
+}
+
+#beschreibung {
+  clear: both;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.imdb {
+  align-items: flex-end;
+}
+
+.header h1 {
+  position: relative;
+  top: 1% auto;
+  left: 1% auto; }
+
+.name {
+  font-weight: bold; }
+
+#intro {
+  margin-top: 50px; }
+
+#pastM {
+  background-color: #3a9c9c;
+  border: 2px solid black;
+  width: 21% auto;
+  height: 10% auto; }
+
+#comM {
+  background-color: #3a9c9c;
+  border: 2px solid black;
+  width: 21% auto;
+  height: 10% auto; }
+
+/*# sourceMappingURL=styles.css.map */
